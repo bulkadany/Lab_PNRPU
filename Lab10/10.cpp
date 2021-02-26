@@ -22,9 +22,9 @@ Node2* make_list2(int n);
 int main()
 {
     setlocale(LC_ALL, "ru");
-    cout << "Îäíîàïðàâëåíûé ñïèñîê\n\n";
+    cout << "Одноаправленый список\n";
     int n;
-    cout << "Ââåäèòå äëèíó ñïèñêà";
+    cout << "Введите длину списка";
     cin >> n;
     Node* list = make_list(n);
     bool dltd = false;
@@ -57,8 +57,8 @@ int main()
         cout << nazvanie->data << ' ';
         nazvanie = nazvanie->next;
     }
-    cout << "\n\nÄâóíàïðàâëåíûé ñïèñîê\n\n";
-    cout << "Ââåäèòå äëèíó ñïèñêà\n";
+    cout << "Двунаправленый список\n";
+    cout << "Введите длину списка\n";
     cin >> n;
     Node2* list2 = make_list2(n);
     Node2* nazvanie2 = list2;
@@ -66,10 +66,10 @@ int main()
     char al;
     do
     {
-        cout << "Ââåäèòå íîìåð ýëåìåíòà\n";
+        cout << "\n";
         cin >> number;
     } while (number > n);
-    cout << "Ââåäèòå ýëåìåíò\n";
+    cout << "Введите номер элемента\n";
     cin >> al;
 
     for (int i = 1; i < number; i++)
