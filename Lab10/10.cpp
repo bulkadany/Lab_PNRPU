@@ -8,7 +8,7 @@ struct Node
     Node* next; 
 };
 struct Node2
-{  //Óçåë
+{  
     char* data; 
     Node2* next; 
     Node2* prev; 
@@ -22,9 +22,9 @@ Node2* make_list2(int n);
 int main()
 {
     setlocale(LC_ALL, "ru");
-    cout << "Îäíîàïðàâëåíûé ñïèñîê\n\n";
+    cout << "ÃŽÃ¤Ã­Ã®Ã Ã¯Ã°Ã Ã¢Ã«Ã¥Ã­Ã»Ã© Ã±Ã¯Ã¨Ã±Ã®Ãª\n\n";
     int n;
-    cout << "Ââåäèòå äëèíó ñïèñêà";
+    cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã¤Ã«Ã¨Ã­Ã³ Ã±Ã¯Ã¨Ã±ÃªÃ ";
     cin >> n;
     Node* list = make_list(n);
     bool dltd = false;
@@ -57,8 +57,8 @@ int main()
         cout << nazvanie->data << ' ';
         nazvanie = nazvanie->next;
     }
-    cout << "\n\nÄâóíàïðàâëåíûé ñïèñîê\n\n";
-    cout << "Ââåäèòå äëèíó ñïèñêà\n";
+    cout << "\n\nÃ„Ã¢Ã³Ã­Ã Ã¯Ã°Ã Ã¢Ã«Ã¥Ã­Ã»Ã© Ã±Ã¯Ã¨Ã±Ã®Ãª\n\n";
+    cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã¤Ã«Ã¨Ã­Ã³ Ã±Ã¯Ã¨Ã±ÃªÃ \n";
     cin >> n;
     Node2* list2 = make_list2(n);
     Node2* nazvanie2 = list2;
@@ -66,10 +66,10 @@ int main()
     char al;
     do
     {
-        cout << "Ââåäèòå íîìåð ýëåìåíòà\n";
+        cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã­Ã®Ã¬Ã¥Ã° Ã½Ã«Ã¥Ã¬Ã¥Ã­Ã²Ã \n";
         cin >> number;
     } while (number > n);
-    cout << "Ââåäèòå ýëåìåíò\n";
+    cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã½Ã«Ã¥Ã¬Ã¥Ã­Ã²\n";
     cin >> al;
 
     for (int i = 1; i < number; i++)
@@ -104,7 +104,7 @@ int main()
 
 
 Node* make_list(int n)
-{ //Ñîçäàíèå ñïèñêà
+{ 
     Node* beg = NULL, * p, * r;
 
     p = new Node;
@@ -123,7 +123,7 @@ Node* make_list(int n)
 }
 
 Node2* make_list2(int n)
-{ //Ñîçäàíèå ñïèñêà
+{ 
     Node2* beg = NULL, * p, * r;
 
     p = new Node2;
